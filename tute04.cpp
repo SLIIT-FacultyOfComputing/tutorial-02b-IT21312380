@@ -29,12 +29,40 @@ int main() {
 }
 long Factorial(int no)
 {
-  int fac = 1;
-    for (int r=no; r >= 1; r--) {
-        fac = fac * r;
+  int facr = 1;
+    for (int r=no; r >= 1; r--) 
+    {
+        facr = facr * r;
     }
+  return no;
 }
 long nCr(int n, int r)
 {
+  float ans;
+  float y;
   
+  int facr = 1;
+  
+    for (int f=r; f >= 1; f--) 
+    {
+        facr = facr * f;
+    }
+ int facn = 1;
+  
+    for (int g=n; g >= 1; g--) 
+    {
+        facn = facn * g;
+    }
+
+y=(n-r);
+
+int facy=1;
+for (int h=y; h >= 1; h--) 
+    {
+        facy = facy * h;
+    }
+
+
+ans=facn/(facr*facy);
+  return ans;
 }
